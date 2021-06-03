@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="hCObmW" name="SimpleEQ" projectType="audioplug" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+              addUsingNamespaceToJuceHeader="1" displaySplashScreen="1" jucerFormatVersion="1"
+              pluginFormats="buildVST3" cppLanguageStandard="17" pluginVST3Category="EQ">
   <MAINGROUP id="jpEMoL" name="SimpleEQ">
     <GROUP id="{85283285-7E46-E0AD-FBF4-5C4EAAEF8ACD}" name="Source">
       <FILE id="fM4MKN" name="PluginProcessor.cpp" compile="1" resource="0"
@@ -33,6 +34,7 @@
         <MODULEPATH id="juce_graphics" path="../../../../../JUCE/modules"/>
         <MODULEPATH id="juce_gui_basics" path="../../../../../JUCE/modules"/>
         <MODULEPATH id="juce_gui_extra" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../../JUCE/modules"/>
       </MODULEPATHS>
     </VS2017>
   </EXPORTFORMATS>
@@ -46,9 +48,13 @@
     <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
   </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
 </JUCERPROJECT>
